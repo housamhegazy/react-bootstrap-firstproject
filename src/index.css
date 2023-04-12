@@ -2,11 +2,35 @@
   padding:0;
   margin:0;
 }
-.dark .navbar-nav > a{
-  color:white!important;
+:Root{
+  --bg-dark:  #000000;
+  --bg-gray: #444444;
+  --body-color:#ffffff;
+  --body-color-blue-gray:#0d6efd
 }
+.App.dark{
+  background-color:var(--bg-dark);
+  min-height: 100vh;
+}
+.dark a{
+  color:var(--body-color);
 
-.dark .dropdown-menu{
-  background-color: black;
-  color:white
 }
+.dark a:hover{
+  color:var(--body-color-blue-gray)!important;
+  
+}
+.dark .dropdown-menu{
+  background-color: var(--bg-gray);
+  color:var(--body-color)
+}
+@media(max-width:767px) { 
+  .slider-img {
+    width:100%
+  }
+ }
+@media(min-width:768px) { 
+  .slider-img {
+    width:50%;
+  }
+ }

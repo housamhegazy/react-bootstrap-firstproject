@@ -1,0 +1,12 @@
+*{
+  padding:0;
+  margin:0;
+}
+.dark .navbar-nav > a{
+  color:white!important;
+}
+
+.dark .dropdown-menu{
+  background-color: black;
+  color:white
+}

@@ -11,7 +11,7 @@ export default function Navbarr() {
       style={{ zIndex: 1000 }}
       bg={theme}
       expand="md"
-      className="position-sticky top-0 zindex-1020"
+      className="position-fixed w-100 top-0 zindex-1020"
     >
       <Container>
         <Navbar.Brand href="#home">

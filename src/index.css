@@ -9,19 +9,20 @@
   --bg-dark:  #000000;
   --bg-gray: #444444;
   --body-color:#ffffff;
-  --body-color-blue-gray:#0d6efd
+  --body-color-red-gray:#a82c48;
 }
+
 .App.dark{
   background-color:var(--bg-dark);
   min-height: 100vh;
 }
 a{
-  color: #a82c48!important;
+  color: var(--body-color-red-gray)!important;
   font-weight: bold!important;
   font-size: 18px!important;
 }
 .phone{
-  background-color:#a82c48!important;
+  background-color:var(--body-color-red-gray)!important;
   font-weight: bold!important;
   color:white;
   text-align: center;
@@ -35,8 +36,8 @@ a{
 }
 .phone:hover{
   background-color:transparent!important;
-  color:#a82c48!important;
-  border:2px solid #a82c48;
+  color:var(--body-color-red-gray)!important;
+  border:2px solid var(--body-color-red-gray);
 }
 .dark a{
   color:var(--body-color);
@@ -60,6 +61,7 @@ a{
     width:50%;
   }
  }
- /* .landing{
-  background-image: url('./images/');
- } */
+ .title{
+  color:var( --body-color-red-gray);
+  font-weight: bold;
+ }

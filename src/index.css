@@ -17,11 +17,14 @@
   min-height: 100vh;
 }
 a{
-  color: var(--body-color-red-gray)!important;
   font-weight: bold!important;
   font-size: 18px!important;
+  text-decoration: none!important;
 }
-.phone{
+nav a{
+  color: var(--body-color-red-gray)!important;
+}
+.custom-btn{
   background-color:var(--body-color-red-gray)!important;
   font-weight: bold!important;
   color:white;
@@ -34,8 +37,8 @@ a{
   margin-left: 10px;
   border:2px solid transparent;
 }
-.phone:hover{
-  background-color:transparent!important;
+.custom-btn:hover{
+  background-color:white!important;
   color:var(--body-color-red-gray)!important;
   border:2px solid var(--body-color-red-gray);
 }

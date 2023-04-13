@@ -3,6 +3,7 @@ import { themeContext } from "context/ThemeContext";
 import { useContext } from "react";
 import { Container, Form, Nav, NavDropdown, Navbar } from "react-bootstrap";
 import BootstrapSwitchButton from "bootstrap-switch-button-react";
+import { NavLink } from "react-router-dom";
 
 export default function Navbarr() {
   const { theme, toggletheme } = useContext(themeContext);
@@ -31,7 +32,7 @@ export default function Navbarr() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" style={{ flexGrow: 0 }}>
           <Nav className="me-auto ">
-            <Nav.Link className="text-primary" href="/">
+            <Nav.Link href="/">
               Home
             </Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
@@ -46,7 +47,7 @@ export default function Navbarr() {
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Item className="phone">800006543</Nav.Item>
+            <Nav.Item className="custom-btn">800006543</Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -8,12 +8,9 @@ export default function ThemeProvider({ children }) {
   const toggletheme = () => {
     if (theme === "light") {
       setTheme("dark");
-      document.body.style.backgroundColor = "black";
-      document.documentElement.classList.add("dark");
       localStorage.setItem("newTheme", "dark");
     } else {
       setTheme("light");
-      document.body.style.backgroundColor = "white";
       localStorage.setItem("newTheme", "light");
     }
   };

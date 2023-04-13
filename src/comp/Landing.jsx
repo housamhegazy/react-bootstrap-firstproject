@@ -11,7 +11,16 @@ export default function Landing() {
       <div className="row d-none d-md-flex">
         <div className="col-6 d-sm-flex flex-column justify-content-center align-items-center">
           <h1 className="title">welcome to foodera</h1>
-          <p>The best restaurant for serving healthy meals</p>
+          <p className="title p-1">The best restaurant for serving healthy meals</p>
+          <div className='mt-3 d-flex'>
+           <a className="custom-btn" href="#">
+              Order Now
+            </a>
+            <a className="custom-btn" href="#">
+              Learn More
+              <i className="bi bi-caret-right"></i>
+            </a>
+           </div>
         </div>
         <div className="col-6 ">
           <img
@@ -23,7 +32,7 @@ export default function Landing() {
         </div>
       </div>
       {/* mobile landing */}
-      <div className="row d-md-none position-relative">
+      <div className="mobile-landing row d-md-none position-relative">
         <div className="col-12">
           <img
             className="img-fluid "
@@ -31,18 +40,20 @@ export default function Landing() {
             width={"500px"}
             alt="landing"
           />
-          <div className="position-absolute top-50 d-sm-flex flex-column justify-content-center align-items-start">
+          <div className="mobile-landing-info position-absolute d-flex flex-column justify-content-center align-items-start">
             <h1 className="title bg-light rounded p-2">welcome to foodera</h1>
-            <p className="title bg-light rounded p-1">
+            <p className="mobile-landing  title bg-light rounded p-1">
               The best restaurant for serving healthy meals
             </p>
-            <a className="custom-btn" href="#">
+           <div className='mt-3 d-flex'>
+           <a className="mobile-landing custom-btn" href="#">
               Order Now
             </a>
-            <a className="custom-btn" href="#">
+            <a className="mobile-landing custom-btn" href="#">
               Learn More
               <i className="bi bi-caret-right"></i>
             </a>
+           </div>
           </div>
         </div>
       </div>

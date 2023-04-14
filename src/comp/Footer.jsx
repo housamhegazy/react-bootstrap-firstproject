@@ -62,11 +62,12 @@ export default function Footer() {
       </div>
 
       <div
-        className="text-center text-dark p-3"
-        style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
+        className="text-center text-light p-3"
+        style={{ backgroundColor: " #a82c48" }}
       >
         © {new Date().getFullYear()} Copyright:
-        <a className="text-dark" href="#">
+        <a className="text-light" href="#">
+          {" "}
           Foodera
         </a>
       </div>

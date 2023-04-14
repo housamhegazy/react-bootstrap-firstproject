@@ -1,12 +1,14 @@
 import { useState } from "react";
-import Carousel from "react-bootstrap/Carousel";
+
 
 function SliderCarousel() {
   let [counter, setCounter] = useState(0);
+  let [activeCarousel, setactiveCarousel] = useState('active');
   const slides = [
-    { imageUrl: "./images/11.jpg", p: "housam ali openion" },
-    { imageUrl: "./images/22.jpg", p: "housam ali openion" },
-    { imageUrl: "./images/33.jpg", p: "housam ali openion" },
+    { imageUrl: "./images/11.jpg", p: "housam ali openion housam ali openion housam ali openion housam ali openion" },
+    { imageUrl: "./images/22.jpg", p: "housam ali openion housam ali openion housam ali openion housam ali openion" },
+    { imageUrl: "./images/33.jpg", p: "housam ali openion housam ali openion housam ali openion housam ali openion" },
+    { imageUrl: "./images/44.jpg", p: "housam ali openion housam ali openion housam ali openion housam ali openion" },
   ];
   let Number = 0;
   const arr = [];
@@ -15,39 +17,41 @@ function SliderCarousel() {
   }
 
   return (
-    <div style={{ background: " #a82c48" }}>
-      <div className="sliders" style={{ position: "relative", margin: "auto" }}>
+    <div className="sliderContainer d-flex flex-column justify-content-center align-items-center" style={{ background: " #a82c48" }}>
+      <div className="sliders" >
         {slides.map((item, index) => {
           return (
             <div
               className="slide-container"
               key={item.imageUrl}
               style={{
-                left: `clac(${index * 100})%`
+                left: `calc(${index} * 100% )`,
+                transform:`translateX(${counter * -100}%)`
               }}
             >
               <img
                 src={item.imageUrl}
-                width="50px"
-                height={"50px"}
+                width="90px"
+                height={"90px"}
                 style={{ borderRadius: "50%" }}
                 alt={"housam"}
               />
-              <p className="p-1">{item.p}</p>
+              <p className="p-1 text-center px-1 px-sm-3">{item.p}</p>
             </div>
           );
         })}
       </div>
-
-      <div style={{ height: "100px" }}>
+        {/* carousel btns */}
+      <div className="carousel-container" >
         {arr.map((item, index) => {
           return (
             <span
+            key={index}
               onClick={() => {
-                setCounter(counter++);
+                setCounter(index);
               }}
               data-count={item}
-              className="carousel"
+              className={`carousel ${counter === index && activeCarousel}`}
             ></span>
           );
         })}

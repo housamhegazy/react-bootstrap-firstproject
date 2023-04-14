@@ -92,44 +92,43 @@ nav a {
 .red-color {
   color: var(--body-color-red-gray);
 }
-
-.carousel {
-  width: 20px;
-  height: 5px;
-  background-color: black;
-  display: inline-block;
-  margin-left: 5px;
-  cursor: pointer;
-}
-
-.carousel.active {
-  background-color: red;
+.sliderContainer{
+  min-height: 400px;
 }
 .sliders {
   margin-top: 50px;
-  height: 400px;
+  height: 300px;
   width: 70%;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
 }
 .slide-container {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0%;
   width: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80%;
+  height: 100%;
   background: white;
-  border-radius: 10px;
   transition: 1s;
 }
-/* @keyframes move {
-  0% {
-    transform: translateX(-1000px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-} */
+.carousel-container{
+  height:fit-content
+}
+.carousel {
+  width: 20px;
+  height: 5px;
+  background-color: white;
+  display: inline-block;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.carousel.active {
+  background-color: black;
+}

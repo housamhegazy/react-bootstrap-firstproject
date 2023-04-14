@@ -1,8 +1,6 @@
 export default function Footer() {
   return (
-    <footer
-      className="footer text-center text-white"
-    >
+    <footer className="footer text-center text-white">
       <div className="container pt-4">
         <section className="mb-4">
           <a
@@ -65,10 +63,7 @@ export default function Footer() {
         style={{ backgroundColor: " #a82c48" }}
       >
         © {new Date().getFullYear()} Copyright:
-        <a className="text-light" href="#">
-          {" "}
-          Foodera
-        </a>
+        <h6 className="text-light d-inline-block"> Foodera</h6>
       </div>
     </footer>
   );

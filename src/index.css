@@ -9,6 +9,7 @@
   --bg-dark:  #000000;
   --bg-gray: #444444;
   --body-color:#ffffff;
+  --body-color-grey:#555555;
   --body-color-red-gray:#a82c48;
 }
 
@@ -21,6 +22,12 @@ a{
   font-size: 18px!important;
   text-decoration: none!important;
 }
+ul{
+  list-style: none;
+  margin:0;
+  padding: 0!important;
+}
+
 nav a{
   color: var(--body-color-red-gray)!important;
 }
@@ -77,4 +84,13 @@ nav a{
 }
 .mobile-landing .custom-btn{
   font-size: 14px!important;
+}
+.p-1{
+  color:var(--body-color-grey)
+}
+.bi-check-lg{
+  color:var(--body-color-red-gray)
+}
+.red-color{
+  color:var(--body-color-red-gray)
 }

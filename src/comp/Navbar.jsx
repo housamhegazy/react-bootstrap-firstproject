@@ -36,7 +36,7 @@ export default function Navbarr() {
         <Navbar.Collapse id="basic-navbar-nav" style={{ flexGrow: 0 }}>
           <Nav className="me-auto ">
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/about">About</Nav.Link>
+            <Nav.Link href="/">About</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">sections</NavDropdown.Item>
               <NavDropdown.Item href="/">Another action</NavDropdown.Item>

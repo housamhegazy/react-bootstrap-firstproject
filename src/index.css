@@ -160,3 +160,14 @@ nav a {
 .dark .form-text {
   color: white !important;
 }
+
+#exampleInputEmail1 {
+  border: 1px solid var(--body-color-red-gray);
+}
+.dark #exampleInputEmail1 {
+  background-color: gray;
+  color: white;
+}
+#exampleInputEmail1:focus {
+  box-shadow: 0 0 3px 3px var(--body-color-red-gray);
+}

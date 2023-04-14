@@ -44,7 +44,9 @@ export default function Landing() {
           />
         </div>
         <div className="mobile-landing-info position-absolute d-flex flex-column justify-content-center align-items-start">
-          <h1 className="title bg-light rounded p-2 fs-4">welcome to foodera</h1>
+          <h1 className="title bg-light rounded p-2 fs-4">
+            welcome to foodera
+          </h1>
           <p className="mobile-landing  title bg-light rounded p-1">
             The best restaurant for serving healthy meals
           </p>

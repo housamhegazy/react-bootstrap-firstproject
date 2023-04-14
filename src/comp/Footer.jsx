@@ -1,8 +1,7 @@
 export default function Footer() {
   return (
     <footer
-      className="text-center text-white"
-      style={{ backgroundColor: "#f1f1f1" }}
+      className="footer text-center text-white"
     >
       <div className="container pt-4">
         <section className="mb-4">

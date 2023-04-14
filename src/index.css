@@ -171,3 +171,9 @@ nav a {
 #exampleInputEmail1:focus {
   box-shadow: 0 0 3px 3px var(--body-color-red-gray);
 }
+
+@media (max-width: 991px) {
+  .landing img {
+    height: 70% !important;
+  }
+}

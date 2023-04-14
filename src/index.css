@@ -153,3 +153,10 @@ nav a {
 .dark .footer a {
   color: white !important;
 }
+.footer a:hover {
+  color: #a82c48 !important;
+}
+.dark .form-label,
+.dark .form-text {
+  color: white !important;
+}

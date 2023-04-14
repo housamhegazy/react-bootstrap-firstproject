@@ -12,7 +12,7 @@ export default function Navbarr() {
       style={{ zIndex: 1000 }}
       bg={theme}
       expand="md"
-      className="position-fixed w-100 top-0 zindex-1020"
+      className="my-navbar position-fixed w-100 top-0 zindex-1020"
     >
       <Container>
         <Navbar.Brand href="#home">
@@ -29,13 +29,14 @@ export default function Navbarr() {
             size="sm"
           />
         </div>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle
+          aria-controls="basic-navbar-nav"
+          className="text-light bg-light"
+        />
         <Navbar.Collapse id="basic-navbar-nav" style={{ flexGrow: 0 }}>
           <Nav className="me-auto ">
-            <Nav.Link href="/">
-              Home
-            </Nav.Link>
-            <Nav.Link href="/about">About</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/">About</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">sections</NavDropdown.Item>
               <NavDropdown.Item href="/">Another action</NavDropdown.Item>

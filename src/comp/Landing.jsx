@@ -3,12 +3,12 @@ import React from "react";
 export default function Landing() {
   return (
     <div
-      className="container"
+      className="container landing"
       style={{
         marginTop: "100px",
       }}
     >
-      <div className="row d-none d-md-flex">
+      <div className="row d-none d-md-flex" style={{ height: "90vh" }}>
         <div className="col-6 d-sm-flex flex-column justify-content-center align-items-center">
           <h1 className="title">welcome to foodera</h1>
           <p className="title p-1">
@@ -26,10 +26,11 @@ export default function Landing() {
         </div>
         <div className="col-6 d-flex justify-content-center ">
           <img
-            className="img-fluid "
+            // className="img-fluid "
             src="./images/landing.jpg"
-            width={"500px"}
+            width={"100%"}
             alt="landing"
+            height={"100%"}
           />
         </div>
       </div>
@@ -44,7 +45,9 @@ export default function Landing() {
           />
         </div>
         <div className="mobile-landing-info position-absolute d-flex flex-column justify-content-center align-items-start">
-          <h1 className="title bg-light rounded p-2 fs-4">welcome to foodera</h1>
+          <h1 className="title bg-light rounded p-2 fs-4">
+            welcome to foodera
+          </h1>
           <p className="mobile-landing  title bg-light rounded p-1">
             The best restaurant for serving healthy meals
           </p>

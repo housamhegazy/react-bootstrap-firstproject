@@ -1,14 +1,25 @@
 import { useState } from "react";
 
-
 function SliderCarousel() {
   let [counter, setCounter] = useState(0);
-  let [activeCarousel, setactiveCarousel] = useState('active');
+  let [activeCarousel, setactiveCarousel] = useState("active");
   const slides = [
-    { imageUrl: "./images/11.jpg", p: "housam ali openion housam ali openion housam ali openion housam ali openion" },
-    { imageUrl: "./images/22.jpg", p: "housam ali openion housam ali openion housam ali openion housam ali openion" },
-    { imageUrl: "./images/33.jpg", p: "housam ali openion housam ali openion housam ali openion housam ali openion" },
-    { imageUrl: "./images/44.jpg", p: "housam ali openion housam ali openion housam ali openion housam ali openion" },
+    {
+      imageUrl: "./images/11.jpg",
+      p: "housam ali openion housam ali openion housam ali openion housam ali openion",
+    },
+    {
+      imageUrl: "./images/22.jpg",
+      p: "housam ali openion housam ali openion housam ali openion housam ali openion",
+    },
+    {
+      imageUrl: "./images/33.jpg",
+      p: "housam ali openion housam ali openion housam ali openion housam ali openion",
+    },
+    {
+      imageUrl: "./images/44.jpg",
+      p: "housam ali openion housam ali openion housam ali openion housam ali openion",
+    },
   ];
   let Number = 0;
   const arr = [];
@@ -17,8 +28,12 @@ function SliderCarousel() {
   }
 
   return (
-    <div className="sliderContainer d-flex flex-column justify-content-center align-items-center" style={{ background: " #a82c48" }}>
-      <div className="sliders" >
+    <div
+      className="sliderContainer d-flex flex-column justify-content-center align-items-center"
+      style={{ background: " #a82c48" }}
+    >
+      <h1 className="text-light pt-4">Testmonials</h1>
+      <div className="sliders">
         {slides.map((item, index) => {
           return (
             <div
@@ -26,7 +41,7 @@ function SliderCarousel() {
               key={item.imageUrl}
               style={{
                 left: `calc(${index} * 100% )`,
-                transform:`translateX(${counter * -100}%)`
+                transform: `translateX(${counter * -100}%)`,
               }}
             >
               <img
@@ -41,12 +56,12 @@ function SliderCarousel() {
           );
         })}
       </div>
-        {/* carousel btns */}
-      <div className="carousel-container" >
+      {/* carousel btns */}
+      <div className="carousel-container">
         {arr.map((item, index) => {
           return (
             <span
-            key={index}
+              key={index}
               onClick={() => {
                 setCounter(index);
               }}

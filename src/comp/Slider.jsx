@@ -1,48 +1,27 @@
+import { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 
 function SliderCarousel() {
+  const [counter, setCounter] = useState(0);
+  const slides = ["ahmed", "housam", "ali"];
+  let Number = 0;
+  const arr = [];
+  for (let i = 0; i < slides.length; i++) {
+    arr.push(Number++);
+  }
+  console.log(arr);
   return (
-    <div className="container bg-dark">
-      <Carousel>
-        <Carousel.Item className="bg-light w-100 h-100 text-center">
-          <img
-          style={{}}
-            className="d-block w-50 m-auto h-50 "
-            src="./images/11.jpg"
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block"
-            src="./images/22.jpg"
-            alt="Second slide"
-          />
-
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block"
-            src="./images/33.jpg"
-            alt="Third slide"
-          />
-
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
+    <div className="container">
+      <div style={{ width: "100%", height: "200px", background: "red" }}>
+        {slides[counter]}
+      </div>
+      <div style={{ height: "100px" }}>
+        {arr.map((item) => {
+          return <span onClick={()=>{
+            setCounter(item)
+          }} data-count={item} className="carousel"></span>;
+        })}
+      </div>
     </div>
   );
 }

@@ -35,7 +35,7 @@ export default function Navbarr() {
           <Nav className="me-auto ">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/">About</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+            <NavDropdown title="sections" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">sections</NavDropdown.Item>
               <NavDropdown.Item href="/">Another action</NavDropdown.Item>
               <NavDropdown.Item className="text-primary" href="#action/3.3">

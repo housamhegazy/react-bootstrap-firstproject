@@ -2,7 +2,7 @@ import { useState } from "react";
 
 function SliderCarousel() {
   let [counter, setCounter] = useState(0);
-  let [activeCarousel, setactiveCarousel] = useState("active");
+
   const slides = [
     {
       imageUrl: "./images/11.jpg",
@@ -66,7 +66,7 @@ function SliderCarousel() {
                 setCounter(index);
               }}
               data-count={item}
-              className={`carousel ${counter === index && activeCarousel}`}
+              className={`carousel ${counter === index && 'active'}`}
             ></span>
           );
         })}

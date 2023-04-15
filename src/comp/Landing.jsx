@@ -15,10 +15,10 @@ export default function Landing() {
             The best restaurant for serving healthy meals
           </p>
           <div className="mt-3 d-flex">
-            <a className="custom-btn" href="#">
+            <a className="custom-btn" href="/">
               Order Now
             </a>
-            <a className="custom-btn" href="#">
+            <a className="custom-btn" href="/">
               Learn More
               <i className="bi bi-caret-right"></i>
             </a>
@@ -52,10 +52,10 @@ export default function Landing() {
             The best restaurant for serving healthy meals
           </p>
           <div className="mt-3 d-flex">
-            <a className="mobile-landing custom-btn" href="#">
+            <a className="mobile-landing custom-btn" href="/">
               Order Now
             </a>
-            <a className="mobile-landing custom-btn" href="#">
+            <a className="mobile-landing custom-btn" href="/">
               Learn More
               <i className="bi bi-caret-right"></i>
             </a>

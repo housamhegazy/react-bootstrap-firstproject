@@ -16,7 +16,7 @@ export default function SectionSix() {
         <h5 className="title text-light">
           Baked fresh daily by bakers with passion
         </h5>
-        <a className="custom-btn w-5">learn more</a>
+        <a className="custom-btn w-5" href="/">learn more</a>
       </div>
     </div>
   );

@@ -1,10 +1,8 @@
 import React from "react";
 import { themeContext } from "context/ThemeContext";
 import { useContext } from "react";
-import { Container, Form, Nav, NavDropdown, Navbar } from "react-bootstrap";
+import { Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
 import BootstrapSwitchButton from "bootstrap-switch-button-react";
-import { NavLink } from "react-router-dom";
-
 export default function Navbarr() {
   const { theme, toggletheme } = useContext(themeContext);
   return (

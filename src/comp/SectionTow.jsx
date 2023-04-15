@@ -27,7 +27,7 @@ export default function SectionTwo() {
               <span className="mx-1">Etiam sed dolor ac diam volutpat.</span>
             </li>
           </ul>
-          <a href="#" className="custom-btn">
+          <a href="/" className="custom-btn">
             learn more
           </a>
         </div>

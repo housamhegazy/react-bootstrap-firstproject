@@ -33,7 +33,7 @@ export default function Counter() {
                       }
                     }}
                   >
-                    <a>+</a>
+                    <span>+</span>
                   </VisibilitySensor>
                 </div>
               )}
@@ -63,7 +63,7 @@ export default function Counter() {
                       }
                     }}
                   >
-                    <a>+</a>
+                    <span>+</span>
                   </VisibilitySensor>
                 </div>
               )}
@@ -93,7 +93,7 @@ export default function Counter() {
                       }
                     }}
                   >
-                    <a>+</a>
+                    <span>+</span>
                   </VisibilitySensor>
                 </div>
               )}
@@ -123,7 +123,7 @@ export default function Counter() {
                       }
                     }}
                   >
-                    <a>+</a>
+                    <span>+</span>
                   </VisibilitySensor>
                 </div>
               )}
